@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'todo/css/bootstrap.css' %}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-conter alert alert-danger">FIRST TODO</h1>
+    </div>
+    {% block content %}
+    {% endblock %}
+    <script src="{% static 'todo/js/jquery.js' %}"></script>
+    <script src="{% static 'todo/js/popper.js' %}"></script>
+    <script src="{% static 'todo/js/bootstrap.js' %}"></script>
+  </body>
+</html>
